@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/youtube-channel", "destination": "/api/youtube-channel.js" },
+    { "source": "/api/youtube-subscribers", "destination": "/api/youtube-subscribers.js" }
+  ]
+}

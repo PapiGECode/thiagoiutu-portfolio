@@ -1,0 +1,83 @@
+/* A 390px mobile canvas, scaled as one unit inside the supplied bezel. */
+.phone.phone-youtube { width: min(350px, 38vw); max-width: none; aspect-ratio: 1470 / 3000; overflow: visible; transform: none !important; }
+.phone-float:has(.phone-youtube) { animation: none; }
+.phone-youtube > .phone-bezel { mix-blend-mode: normal; z-index: 5; }
+.phone-youtube > .youtube-phone-ui { inset: 1.6% 3.9% 1.8%; border-radius: 13% / 6%; background: #0f0f0f; }
+.yn { position: absolute; top: 0; left: 0; width: 390px; height: 825px; transform-origin: top left; background: #0f0f0f; color: #f1f1f1; font: 14px/1.4 Arial, Helvetica, sans-serif; letter-spacing: normal; text-align: left; color-scheme: dark; }
+.yn *, .yn *::before, .yn *::after { box-sizing: border-box; }
+.yn [hidden] { display: none !important; }
+.yn button, .yn input, .yn a { font: inherit; color: inherit; letter-spacing: normal; text-transform: none; }
+.yn button, .yn a { -webkit-tap-highlight-color: transparent; }
+.yn a { text-decoration: none; }
+.yn button { border: 0; background: transparent; padding: 0; cursor: pointer; }
+.yn button:focus-visible, .yn a:focus-visible, .yn input:focus-visible { outline: 2px solid #8ab4f8; outline-offset: -2px; }
+.yn svg { display: block; width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+.yn .yn-icon { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0; }
+.yn .yn-icon:active { background: #333; }
+/* Only the supplied bezel draws the camera / Dynamic Island. */
+.yn-status { position: absolute; inset: 0 0 auto; z-index: 4; height: 54px; padding: 0 27px 0 43px; display: flex; align-items: center; justify-content: space-between; background: #0f0f0f; color: #f5f5f7; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif; }
+.yn-time { font-size: 19px; line-height: 1; font-weight: 600; letter-spacing: -.65px; font-variant-numeric: tabular-nums; }
+.yn-signal { display: flex; align-items: center; gap: 5px; }
+.yn-status svg { fill: currentColor; stroke: none; flex-shrink: 0; }
+.yn-status .yn-cellular { width: 20px; height: 14px; }
+.yn-status .yn-wifi { width: 17px; height: 13px; }
+.yn-status .yn-battery { width: 29px; height: 14px; margin-left: 1px; }
+.yn-toolbar { position: absolute; top: 54px; left: 0; right: 0; height: 42px; display: flex; align-items: center; justify-content: space-between; padding: 0 3px; z-index: 4; background: #0f0f0f; }
+.yn-toolbar-right { display: flex; align-items: center; }
+.yn-scroll { position: absolute; inset: 96px 0 61px; overflow: auto; overscroll-behavior: contain; scrollbar-width: none; touch-action: pan-y; }
+.yn-scroll::-webkit-scrollbar { display: none; }
+.yn-banner { margin: 0 10px; height: 101px; border-radius: 6px; background-color: #202020; background-position: center; background-size: 170% auto; background-repeat: no-repeat; }
+.yn-profile { display: flex; align-items: center; gap: 14px; padding: 12px 10px 8px; }
+.yn-avatar { width: 67px; height: 67px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.yn-name { display: flex; align-items: center; gap: 6px; margin: 0 0 2px; font: 700 23px/1.2 Arial, Helvetica, sans-serif; letter-spacing: -.4px; }
+.yn .yn-check { width: 15px; height: 15px; border-radius: 50%; padding: 2px; background: #ededed; stroke: #151515; stroke-width: 2.7; }
+.yn-handle { font-size: 13px; font-weight: 600; }
+.yn-stats { margin-top: 3px; color: #aaa; font-size: 11.5px; white-space: nowrap; }
+.yn .yn-description { display: flex; width: 100%; gap: 4px; padding: 2px 10px 8px; font-size: 12px; text-align: left; }
+.yn-description span { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #bdbdbd; }
+.yn-description b { font-weight: 600; }
+.yn .yn-links { display: flex; gap: 5px; align-items: center; padding: 1px 10px 10px; font-size: 12px; font-weight: 600; }
+.yn-links svg { width: 15px; height: 15px; }
+.yn .yn-subscribe { display: flex; align-items: center; justify-content: center; gap: 9px; border-radius: 30px; height: 37px; margin: 0 10px 7px; background: #292929; font-size: 14px; font-weight: 600; }
+.yn-subscribe svg { width: 23px; height: 23px; }
+.yn-tabs { display: flex; justify-content: space-between; padding: 0 9px; height: 43px; border-bottom: 1px solid #333; }
+.yn .yn-tab { position: relative; padding: 0 11px; white-space: nowrap; color: #aaa; font-size: 15px; }
+.yn .yn-tab[aria-selected="true"] { color: #f1f1f1; font-weight: 600; }
+.yn-tab[aria-selected="true"]::after { content: ''; position: absolute; height: 2px; background: #eee; bottom: 0; left: 0; right: 0; }
+.yn-card { display: block; }
+.yn-thumb { position: relative; background: #202020; aspect-ratio: 16 / 9; overflow: hidden; }
+.yn-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.yn-duration { position: absolute; bottom: 8px; right: 8px; background: #000c; border-radius: 4px; padding: 1px 4px; font-size: 12px; font-weight: 600; }
+.yn-card-copy { display: flex; align-items: flex-start; gap: 9px; padding: 9px 9px 18px; }
+.yn-card-copy > img { width: 32px; height: 32px; object-fit: cover; border-radius: 50%; }
+.yn-card-copy > div { flex: 1; min-width: 0; }
+.yn-card h4 { margin: 0 0 5px; font: 500 14.5px/1.3 Arial, Helvetica, sans-serif; letter-spacing: -.2px; }
+.yn-card-meta { display: flex; flex-wrap: wrap; align-items: center; column-gap: 4px; font-size: 10.5px; color: #aaa; }
+.yn-card-meta .yn-check { width: 10px; height: 10px; }
+.yn-more-dots { letter-spacing: 1px; font-size: 16px; line-height: 16px; }
+.yn-section-title { border-top: 1px solid #333; padding: 9px 10px; margin: 0; font: 600 18px/1.2 Arial, Helvetica, sans-serif; }
+.yn-bottom { position: absolute; inset: auto 0 0; height: 61px; padding: 5px 10px 13px; border-top: 1px solid #333; background: #0f0f0f; display: flex; align-items: center; justify-content: space-between; z-index: 6; }
+.yn-bottom a, .yn-bottom button { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-width: 44px; font-size: 9px; }
+.yn-bottom svg { width: 23px; height: 23px; }
+.yn-bottom .yn-create { border-radius: 50%; background: #272727; width: 34px; height: 34px; min-width: 34px; }
+.yn-bottom .yn-you { border-radius: 50%; width: 22px; height: 22px; object-fit: cover; }
+.yn-home-indicator { position: absolute; bottom: 5px; left: 34%; right: 34%; height: 4px; border-radius: 4px; background: #eee; }
+.yn-sheet { position: absolute; z-index: 7; inset: 96px 0 61px; background: #151515; overflow: auto; overscroll-behavior: contain; padding: 14px; }
+.yn-sheet header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; font-size: 19px; font-weight: 600; }
+.yn-sheet p { white-space: pre-line; font-size: 14px; line-height: 1.6; margin: 0 0 15px; }
+.yn-sheet a { display: block; color: #8ab4f8; padding: 12px 0; }
+.yn-search { width: 100%; border: 1px solid #555; border-radius: 20px; padding: 10px 14px; background: #242424; margin-bottom: 16px; }
+.yn-message { padding: 25px 16px; text-align: center; color: #aaa; font-size: 14px; }
+.yn-message a { display: block; padding-top: 12px; color: #8ab4f8; }
+.yn-loading { height: 180px; background: linear-gradient(110deg,#191919 30%,#252525 48%,#191919 65%); background-size: 220% 100%; animation: yn-loading 1.5s infinite; }
+@keyframes yn-loading { to { background-position: -220% 0; } }
+.yn-watch { position: absolute; z-index: 8; inset: 96px 0 61px; background: #0f0f0f; overflow: auto; overscroll-behavior: contain; scrollbar-width: none; }
+.yn .yn-watch-back { display: flex; align-items: center; gap: 6px; width: 100%; padding: 10px 12px; font-size: 14px; text-align: left; }
+.yn-player { display: block; width: 100%; height: 245px; border: 0; background: #000; }
+.yn-watch-info { padding: 16px; }
+.yn-watch-info h3 { margin: 0 0 10px; font: 600 18px/1.35 Arial, sans-serif; letter-spacing: normal; }
+.yn-watch-info p { margin: 10px 0; }
+.yn-watch-info a { display: inline-block; padding: 10px 14px; border-radius: 22px; background: #292929; font-size: 14px; }
+.yn-watch-info .yn-watch-help { font-size: 12px; line-height: 1.5; color: #aaa; }
+@media (max-width: 880px) { .phone.phone-youtube { width: min(350px, 82vw); } .panel-visual:has(.phone-youtube) { padding-block: 15px; } }
+@media (prefers-reduced-motion: reduce) { .yn-loading { animation: none; } }

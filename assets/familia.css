@@ -1,0 +1,87 @@
+:root { color-scheme: dark; --ink:#000; --bone:#fff; --ash:rgba(255,255,255,.76); --line:rgba(255,255,255,.16); --blue:#175a9a; --surface:#07121e; --focus:#79bfff; }
+html.light { color-scheme:light; --ink:#fff; --bone:#0a1520; --ash:#46515d; --line:rgba(0,0,0,.14); --surface:#f1f6fb; --focus:#175a9a; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:radial-gradient(ellipse at 100% 0%, #175a9a30, transparent 32%), var(--ink); color:var(--bone); font:400 1rem/1.7 Inter,sans-serif; }
+a { color:inherit; text-decoration:none; }
+button { font:inherit; color:inherit; cursor:pointer; }
+button, a { -webkit-tap-highlight-color:transparent; }
+.shell { width:min(1200px, 90%); margin-inline:auto; }
+.navigation { position:sticky; top:12px; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:12px 24px; border:1px solid var(--line); border-radius:60px; background:color-mix(in srgb,var(--ink) 88%,transparent); backdrop-filter:blur(18px); z-index:20; margin-top:12px; }
+.brand { font:800 1.15rem "Bricolage Grotesque",sans-serif; letter-spacing:-.03em; }
+.nav-links { display:flex; align-items:center; gap:24px; font-size:.8rem; }
+.nav-links a { padding-block:10px; }
+.nav-links [aria-current] { color:var(--focus); }
+#theme-toggle { width:44px; height:44px; border:1px solid var(--line); border-radius:50%; background:transparent; font-size:1.25rem; }
+a:hover { color:var(--focus); }
+.family-hero { padding-block:64px 0; }
+.breadcrumb { font-size:.8rem; color:var(--ash); }
+.family-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:2rem; margin-top:28px; }
+h1 { margin:0; font:800 clamp(3.5rem,9vw,8rem)/1.02 "Bricolage Grotesque",sans-serif; letter-spacing:-.055em; }
+h1 span { color:var(--focus); }
+.album-index,.tag { font:.68rem/1.7 "JetBrains Mono",monospace; letter-spacing:.07em; text-transform:uppercase; color:var(--ash); }
+.album-index { text-align:right; padding-bottom:10px; }
+.family-hero > p { color:var(--ash); max-width:54ch; font-size:clamp(1rem,1.5vw,1.2rem); margin-block:28px 42px; }
+.album-nav { display:flex; align-items:center; gap:24px; border-block:1px solid var(--line); padding-block:18px; font-size:.8rem; }
+.album-nav a { display:flex; align-items:center; gap:20px; min-height:32px; }
+.album-nav > span { margin-left:auto; color:var(--ash); font-size:.72rem; }
+.album-section { padding-top:72px; scroll-margin-top:100px; }
+.album-title { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-bottom:28px; }
+.album-title h2 { font:700 clamp(1.5rem,3vw,2.4rem) "Bricolage Grotesque",sans-serif; letter-spacing:-.03em; margin:0; }
+.members { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; }
+.member { border:1px solid var(--line); border-radius:20px; background:linear-gradient(150deg,#175a9a15,transparent),var(--ink); overflow:hidden; }
+.photo-open { display:block; width:100%; border:0; padding:0; background:var(--surface); position:relative; overflow:hidden; }
+.member-photo img { display:block; width:100%; height:auto; aspect-ratio:5/4; object-fit:cover; object-position:center 40%; transition:transform .6s; }
+.photo-open:hover > img { transform:scale(1.035); }
+.photo-hint { position:absolute; right:16px; bottom:16px; padding:7px 14px; background:#000b; border:1px solid #ffffff40; border-radius:30px; color:#fff; font-size:.7rem; }
+.member-info { padding:28px; }
+.member h3 { font:700 2rem "Bricolage Grotesque",sans-serif; margin:8px 0 12px; letter-spacing:-.035em; }
+.member p { color:var(--ash); margin:0; font-size:.92rem; max-width:45ch; }
+.photo-strip { display:flex; gap:12px; margin-top:24px; }
+.photo-strip button { width:80px; border-radius:10px; border:1px solid var(--line); }
+.photo-strip img { display:block; width:100%; height:auto; aspect-ratio:1; object-fit:cover; }
+.album-end { padding-block:80px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.album-end p { font:700 clamp(1.7rem,3vw,3rem)/1.2 "Bricolage Grotesque",sans-serif; letter-spacing:-.03em; margin:0; }
+.album-end strong { color:var(--focus); font-weight:inherit; }
+.back-link { padding:12px 22px; border:1px solid var(--line); border-radius:40px; font-size:.82rem; }
+.foot-word { border-top:1px solid var(--line); text-align:center; font:800 clamp(4rem,16vw,14rem) "Bricolage Grotesque",sans-serif; letter-spacing:-.05em; text-transform:uppercase; opacity:.14; }
+.foot-bottom { border-top:1px solid var(--line); display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; padding:24px 0; color:var(--ash); font:.72rem "JetBrains Mono",monospace; }
+.footer-heart { display:inline-block; animation:blink 1.6s ease-in-out infinite; }
+@keyframes blink { 0%,100% { opacity:.5; transform:scale(.95); } 50% { opacity:1; transform:scale(1.1); } }
+.skip { position:fixed; left:20px; top:-100px; background:var(--ink); padding:12px; z-index:100; }
+.skip:focus { top:8px; }
+#cur { display:none; pointer-events:none; position:fixed; inset:0; z-index:100; }
+html.fine,html.fine * { cursor:none !important; }
+html.fine #cur { display:block; }
+#cur-ring,#cur-dot { position:fixed; left:0; top:0; border-radius:50%; transform:translate(-50%,-50%); }
+#cur-ring { width:38px; height:38px; border:1px solid var(--focus); transition:width .2s,height .2s; }
+#cur-dot { width:5px; height:5px; background:var(--bone); }
+html.cur-hot #cur-ring { width:54px; height:54px; background:#175a9a22; }
+#photo-dialog { background:#060a0f; color:#fff; border:1px solid #ffffff30; border-radius:18px; padding:16px; width:min(1000px,94vw); max-height:94dvh; overflow:auto; }
+#photo-dialog::backdrop { background:#000d; backdrop-filter:blur(8px); }
+#photo-full { display:block; width:100%; height:70dvh; object-fit:contain; }
+#photo-dialog #cur-dot { background:#fff; }
+.lightbox-toolbar,.lightbox-bottom { display:flex; justify-content:space-between; align-items:center; gap:16px; }
+.lightbox-toolbar { padding-bottom:10px; font-size:.8rem; }
+.lightbox-bottom p { flex:1; text-align:center; font-size:.85rem; margin:12px 0; }
+#photo-dialog button { background:#ffffff12; border:1px solid #ffffff30; border-radius:24px; min-width:44px; min-height:44px; padding:8px 16px; }
+body:has(dialog[open]) { overflow:hidden; }
+@media(max-width:650px) {
+  .navigation { padding:8px 16px; }
+  .nav-links { gap:14px; }
+  .brand { font-size:1rem; }
+  .family-hero { padding-top:40px; }
+  .family-heading { display:block; }
+  .album-index { display:none; }
+  .album-nav { flex-wrap:wrap; gap:8px 24px; }
+  .album-nav > span { margin:0; width:100%; }
+  .members { grid-template-columns:1fr; gap:24px; }
+  .album-section { padding-top:48px; }
+  .album-title { display:block; }
+  .album-title h2 { margin-top:8px; }
+  .member-info { padding:24px; }
+  .member-photo img { aspect-ratio:4/5; }
+  .album-end { align-items:flex-start; flex-direction:column; padding-block:56px; }
+  #photo-full { height:62dvh; }
+  .lightbox-bottom { gap:8px; }
+}

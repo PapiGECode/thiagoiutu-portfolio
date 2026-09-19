@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ThiagoIUTU</title>
+  <meta name="description" content="El álbum familiar de ThiagoIUTU: Matias, Tomi, Mike y Naruto. Hermanos, mascotas y recuerdos compartidos.">
+  <link rel="icon" type="image/png" href="assets/shuriken-favicon.png">
+  <script>try { const t = localStorage.getItem("ak-theme"); if (t === "light" || (!t && matchMedia("(prefers-color-scheme: light)").matches)) document.documentElement.classList.add("light"); } catch (e) {}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/familia.css">
+  <link rel="stylesheet" href="assets/polish.css">
+</head>
+<body class="family-page">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <nav class="shell navigation" aria-label="Navegación principal">
+    <a class="brand" href="index.html">ThiagoIUTU</a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="familia.html" aria-current="page">Familia</a>
+      <button id="theme-toggle" type="button" aria-label="Activar tema claro" aria-pressed="false">◐</button>
+    </div>
+  </nav>
+  <main id="main" tabindex="-1">
+    <header class="shell family-hero">
+      <a class="breadcrumb" href="index.html">← Mi mundo</a>
+      <div class="family-heading"><h1>Mi <span>familia.</span></h1><span class="album-index">EL ÁLBUM PERSONAL<br>DE THIAGOIUTU / 01</span></div>
+      <p>Fuera de la pantalla, están ellos.<br>Mis hermanos, nuestros compañeros de cuatro patas y los momentos que compartimos.</p>
+      <div class="album-nav"><a href="#hermanos">Mis hermanos <span aria-hidden="true">↓</span></a><a href="#mascotas">También son familia <span aria-hidden="true">↓</span></a><span>9 recuerdos, un mismo hogar.</span></div>
+    </header>
+    <section id="hermanos" class="shell album-section" aria-labelledby="brothers-title">
+      <div class="album-title"><span class="tag">01 / Los de siempre</span><h2 id="brothers-title">Mis hermanos</h2></div>
+      <div class="members"><article class="member">
+  <div class="member-photo">
+    <button class="photo-open" data-photo="0" data-gallery="matias" aria-label="Ampliar foto de Matias">
+      <img src="assets/family-matias.jpg" alt="Thiago junto a su hermano Matias, frente al mar." width="900" height="1100" fetchpriority="high" decoding="async">
+      <span class="photo-hint" aria-hidden="true">Ampliar ↗</span>
+    </button>
+  </div>
+  <div class="member-info"><span class="tag">Mi hermano</span><h3>Matias</h3><p>Un recuerdo junto al mar. De esas aventuras en familia que se quedan para siempre.</p>
+  
+  </div>
+</article>
+<article class="member">
+  <div class="member-photo">
+    <button class="photo-open" data-photo="1" data-gallery="tomi" aria-label="Ampliar foto de Tomi">
+      <img src="assets/family-tomi.jpg" alt="Thiago y su hermano Tomi con camisetas de Argentina." width="900" height="1100" loading="lazy" decoding="async">
+      <span class="photo-hint" aria-hidden="true">Ampliar ↗</span>
+    </button>
+  </div>
+  <div class="member-info"><span class="tag">Mi hermano</span><h3>Tomi</h3><p>Camisetas de Argentina, bromas y momentos compartidos entre hermanos.</p>
+  
+  </div>
+</article></div>
+    </section>
+    <section id="mascotas" class="shell album-section" aria-labelledby="pets-title">
+      <div class="album-title"><span class="tag">02 / Cuatro patas</span><h2 id="pets-title">También son familia</h2></div>
+      <div class="members"><article class="member">
+  <div class="member-photo">
+    <button class="photo-open" data-photo="2" data-gallery="mike" aria-label="Ampliar foto de Mike">
+      <img src="assets/family-mike-2.jpg" alt="Mike con su camiseta de Argentina." width="900" height="1100" loading="lazy" decoding="async">
+      <span class="photo-hint" aria-hidden="true">Ampliar ↗</span>
+    </button>
+  </div>
+  <div class="member-info"><span class="tag">Nuestro perro</span><h3>Mike</h3><p>También es de la familia. Compañero de días en casa y protagonista de este pequeño álbum.</p>
+  <div class="photo-strip" aria-label="Más fotos de Mike"><button class="photo-open" data-photo="3" data-gallery="mike" aria-label="Ampliar: Mike posando en casa."><img src="assets/family-mike-1.jpg" alt="Mike posando en casa." width="160" height="160" loading="lazy" decoding="async"></button><button class="photo-open" data-photo="4" data-gallery="mike" aria-label="Ampliar: Un primer plano de Mike con la camiseta de la selección."><img src="assets/family-mike-3.jpg" alt="Un primer plano de Mike con la camiseta de la selección." width="160" height="160" loading="lazy" decoding="async"></button><button class="photo-open" data-photo="5" data-gallery="mike" aria-label="Ampliar: Un abrazo con Mike."><img src="assets/family-mike-4.jpg" alt="Un abrazo con Mike." width="160" height="160" loading="lazy" decoding="async"></button></div>
+  </div>
+</article>
+<article class="member">
+  <div class="member-photo">
+    <button class="photo-open" data-photo="6" data-gallery="naruto" aria-label="Ampliar foto de Naruto">
+      <img src="assets/family-naruto-3.jpg" alt="Naruto mirando a la cámara." width="900" height="1100" loading="lazy" decoding="async">
+      <span class="photo-hint" aria-hidden="true">Ampliar ↗</span>
+    </button>
+  </div>
+  <div class="member-info"><span class="tag">Nuestro gato</span><h3>Naruto</h3><p>Entre siestas, miradas a cámara y ratos de compañía. Nuestro rincón felino de la familia.</p>
+  <div class="photo-strip" aria-label="Más fotos de Naruto"><button class="photo-open" data-photo="7" data-gallery="naruto" aria-label="Ampliar: Un momento tranquilo con Naruto."><img src="assets/family-naruto-2.jpg" alt="Un momento tranquilo con Naruto." width="160" height="160" loading="lazy" decoding="async"></button><button class="photo-open" data-photo="8" data-gallery="naruto" aria-label="Ampliar: Naruto bostezando en su rascador."><img src="assets/family-naruto-1.jpg" alt="Naruto bostezando en su rascador." width="160" height="160" loading="lazy" decoding="async"></button></div>
+  </div>
+</article></div>
+    </section>
+    <div class="shell album-end"><p>Los mejores recuerdos<br>se hacen <strong>juntos.</strong></p><a class="back-link" href="index.html">← Volver al inicio</a></div>
+  </main>
+  <footer class="shell">
+    <div class="foot-word">Thiago</div>
+    <div class="foot-bottom"><span>© 2026 Thiago</span><span>Hecho con <span class="footer-heart" role="img" aria-label="amor">♡</span> para mis seguidores</span></div>
+  </footer>
+  <dialog id="photo-dialog" aria-label="Álbum de familia">
+    <div class="lightbox-toolbar"><span id="photo-count"></span><button type="button" id="photo-close" aria-label="Cerrar foto">Cerrar ×</button></div>
+    <img id="photo-full" alt="">
+    <div class="lightbox-bottom"><button type="button" id="photo-prev" aria-label="Foto anterior">←</button><p id="photo-caption" aria-live="polite"></p><button type="button" id="photo-next" aria-label="Foto siguiente">→</button></div>
+  </dialog>
+  <div id="cur" aria-hidden="true"><div id="cur-ring"></div><div id="cur-dot"></div></div>
+  <script src="assets/familia.js?v=2"></script>
+</body>
+</html>
