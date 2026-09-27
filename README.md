@@ -19,9 +19,7 @@ Gaming, humor, comunidad, recuerdos y contenido de YouTube dentro de una experie
 
 </div>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/PapiGECode/thiagoiutu-portfolio/main/assets/preview.webp" alt="Vista previa del portfolio de ThiagoIUTU" width="100%">
-</p>
+![Vista previa del portfolio de ThiagoIUTU](./assets/preview.webp)
 
 ---
 
