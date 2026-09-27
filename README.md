@@ -19,7 +19,7 @@ Gaming, humor, comunidad, recuerdos y contenido de YouTube dentro de una experie
 
 </div>
 
-![Vista previa del portfolio de ThiagoIUTU](./assets/preview.webp)
+![Vista previa del portfolio de ThiagoIUTU](./assets/preview.jpg)
 
 ---
 
