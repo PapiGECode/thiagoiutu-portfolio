@@ -1,299 +1,201 @@
-<!--
-  ╔══════════════════════════════════════════════════════════════╗
-  ║  Before publishing, replace every <PLACEHOLDER> below:        ║
-  ║    <USERNAME>   → your GitHub username (e.g. arsalankaleem)    ║
-  ║    <REPO>       → your repo name      (e.g. portfolio)        ║
-  ║    <LIVE_URL>   → your deployed site  (e.g. arsalan.dev)      ║
-  ║    <EMAIL>      → your contact email                          ║
-  ║  Then add a screenshot at  ./assets/preview.png               ║
-  ╚══════════════════════════════════════════════════════════════╝
--->
+<div align="center">
 
-<h1 align="center">Arsalan Kaleem — Portfolio</h1>
+# ThiagoIUTU — Portfolio
 
-<p align="center">
-  <em>A cinematic, single-file developer portfolio.</em><br>
-  Monochrome editorial design · GSAP scroll storytelling · light/dark mode · zero build step.
-</p>
+**Portfolio web interactivo dedicado a ThiagoIUTU.**  
+Gaming, humor, comunidad, recuerdos y contenido de YouTube dentro de una experiencia visual editorial y cinematográfica.
 
-<!-- ─── TECH BADGES ─────────────────────────────────────────── -->
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](./index.html)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](./assets)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](./assets)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](./vercel.json)
+[![YouTube Data API](https://img.shields.io/badge/YouTube_Data_API-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](./api)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/GSAP-0AE448?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP">
-  <img src="https://img.shields.io/badge/Lenis-000000?style=for-the-badge&logoColor=white" alt="Lenis">
-</p>
+[![Stars](https://img.shields.io/github/stars/PapiGECode/thiagoiutu-portfolio?style=flat-square)](https://github.com/PapiGECode/thiagoiutu-portfolio/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/PapiGECode/thiagoiutu-portfolio?style=flat-square)](https://github.com/PapiGECode/thiagoiutu-portfolio/commits/main)
+[![Repo size](https://img.shields.io/github/repo-size/PapiGECode/thiagoiutu-portfolio?style=flat-square)](https://github.com/PapiGECode/thiagoiutu-portfolio)
 
-<!-- ─── REPO BADGES (need <USERNAME>/<REPO>) ────────────────── -->
+[Canal de YouTube](https://www.youtube.com/@ThiagoIUTU) · [Repositorio](https://github.com/PapiGECode/thiagoiutu-portfolio)
+
+</div>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/ArsalanKaleem/portfolio?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/github/stars/ArsalanKaleem/portfolio?style=for-the-badge" alt="Stars">
-  <img src="https://img.shields.io/github/forks/ArsalanKaleem/portfolio?style=for-the-badge" alt="Forks">
-  <img src="https://img.shields.io/github/last-commit/ArsalanKaleem/portfolio?style=for-the-badge" alt="Last commit">
-  <img src="https://img.shields.io/github/repo-size/ArsalanKaleem/portfolio?style=for-the-badge" alt="Repo size">
-</p>
-
-<p align="center">
-  <a href="https://<LIVE_URL>"><strong>🌐 Live Demo</strong></a>
-  ·
-  <a href="#-customization"><strong>🎨 Customize</strong></a>
-  ·
-  <a href="#-deployment"><strong>🚀 Deploy</strong></a>
-</p>
-
-<!-- Add a screenshot here once you have one -->
-
-<p align="center">
-  <img src="./assets/preview.png" alt="Portfolio preview" width="100%">
+  <img src="./assets/preview.webp" alt="Vista previa del portfolio de ThiagoIUTU" width="100%">
 </p>
 
 ---
 
-## ✦ Overview
+## Sobre el proyecto
 
-A premium, Awwwards-leaning personal portfolio for **Arsalan Kaleem**, a Flutter &amp; AI developer.
-The whole site lives in **one self-contained HTML file** — no framework, no bundler, no install.
-Open it in a browser and it just runs; the animation libraries are vendored inline, so it works
-offline and never breaks from a CDN change.
+Este repositorio contiene una web de presentación para **ThiagoIUTU**, creador argentino de contenido centrado en videojuegos, humor, retos, vlogs y comunidad.
 
-The design language is deliberately restrained: a warm monochrome, oversized grotesque
-typography, mono slash-labels, and editorial spacing. The motion is layered on top to amplify
-that restraint rather than fight it.
+La web no está planteada como una landing genérica: utiliza una dirección visual propia, tipografía de gran formato, fotografía protagonista, microinteracciones y narrativa mediante scroll. Además, integra una recreación interactiva del canal de YouTube y una sección independiente dedicada a su familia y recuerdos.
 
----
+## Características
 
-## ✨ Features
-
-- **🎬 Cinematic preloader** — logo mark → 0–100 counter → curtain wipe → name revealed character
-  by character with `SplitText`. Click anywhere to skip.
-- **🖱️ Custom magnetic cursor** — dot + ring with contextual labels (`VIEW` / `OPEN` / `VISIT` /
-  `SEND`), grows over media, snaps to buttons. Auto-disabled on touch devices.
-- **📜 Scroll storytelling** — hero scales into depth, statements reveal word-by-word, stats count
-  up, the portrait reacts to the mouse, section lines draw themselves in.
-- **🪟 Sticky project showcase** — projects stack and push each other away Apple-style, each with a
-  3D-tilting phone mockup and its own ambient tint.
-- **🌗 Light / Dark mode** — true token swap (not a filter), with **system-preference detection**,
-  **`localStorage` persistence**, and a smooth crossfade on switch.
-- **🖼️ Theme-aware portrait** — a separate photo for light and dark, cross-fading with the theme.
-- **📱 Fully responsive** — fluid `clamp()` type, a compact mobile layout, and a full-screen mobile
-  menu with a clear close (✕) control.
-- **♿ Accessible** — honours `prefers-reduced-motion`, semantic HTML, visible focus states, a skip
-  link, and ARIA labelling.
-- **⚡ Performant** — GPU-friendly transforms only, libraries vendored (no render-blocking CDN),
-  one file to cache.
-- **🥚 Easter eggs** — a few hidden rewards for the curious (see below).
+- **Hero editorial de gran formato** con identidad visual propia y composición centrada en Thiago.
+- **Animaciones cinematográficas** con GSAP, ScrollTrigger, SplitText y Lenis.
+- **Scroll storytelling** con transiciones, revelados de texto y elementos reactivos.
+- **Tema claro y oscuro** con detección de preferencia del sistema y persistencia mediante `localStorage`.
+- **Cursor y microinteracciones personalizadas** en escritorio, con adaptación para dispositivos táctiles.
+- **Experiencia responsive** para escritorio, tablet y móvil.
+- **Soporte para `prefers-reduced-motion`** y navegación por teclado.
+- **Página de familia** con álbum visual, hermanos, mascotas y visor de imágenes.
+- **Recreación interactiva de YouTube dentro de un teléfono**, con pestañas, vídeos, playlists e información del canal.
+- **Datos dinámicos del canal de YouTube** mediante YouTube Data API v3.
+- **Fallback local de datos** para mantener contenido disponible cuando la API no responde.
+- **Endpoints serverless para Vercel** y servidor local en Python para desarrollo.
 
 ---
 
-## 🛠️ Tech Stack
+## Stack
 
-
-| Layer         | Tools                                                                               |
-| ------------- | ----------------------------------------------------------------------------------- |
-| Markup        | Semantic**HTML5** (single file)                                                     |
-| Styling       | **CSS3** — custom-property design tokens, fluid `clamp()` type, Grid &amp; Flexbox |
-| Behaviour     | **Vanilla JavaScript** (no framework)                                               |
-| Animation     | **GSAP 3.13** · **ScrollTrigger** · **SplitText**                                 |
-| Smooth scroll | **Lenis**                                                                           |
-| Typography    | Bricolage Grotesque · Inter · JetBrains Mono (Google Fonts)                       |
-
-> All animation libraries are **inlined** into the HTML, so the published file has **no external
-> JS dependencies**.
-
----
-
-## 🥚 Easter Eggs
-
-
-| Trigger                                | What happens                              |
-| -------------------------------------- | ----------------------------------------- |
-| Press**`G`**                           | Toggles a 12-column design-grid overlay   |
-| Click the**logo** 5×                  | Unlocks and cycles a hidden accent colour |
-| Click the pulsing**“available” dot** | A little hello                            |
-| **`↑ ↑ ↓ ↓ ← → ← → B A`**      | The Konami surprise                       |
-| Click during the**loader**             | Skips the intro instantly                 |
+| Área | Tecnología |
+| --- | --- |
+| Estructura | HTML5 |
+| Estilos | CSS3, custom properties, Grid, Flexbox, `clamp()` |
+| Interacción | JavaScript vanilla |
+| Animación | GSAP, ScrollTrigger, SplitText |
+| Smooth scroll | Lenis |
+| Tipografía | Bricolage Grotesque, Inter, JetBrains Mono |
+| Datos | YouTube Data API v3 |
+| Backend ligero | Vercel Serverless Functions / Node.js |
+| Desarrollo local | Python `http.server` |
+| Despliegue | Vercel |
 
 ---
 
-## 🚀 Getting Started
+## Estructura del proyecto
 
-This is a static site — there is genuinely nothing to install.
-
-```bash
-# 1. Clone
-git clone https://github.com/<USERNAME>/<REPO>.git
-cd <REPO>
-
-# 2. Open it
-#    macOS:
-open arsalan-portfolio.html
-#    Windows:
-start arsalan-portfolio.html
-#    Linux:
-xdg-open arsalan-portfolio.html
-```
-
-Prefer a local server (recommended, so fonts and routing behave exactly like production)?
-
-```bash
-# Python 3
-python3 -m http.server 8000
-# then visit http://localhost:8000/arsalan-portfolio.html
-
-# …or Node
-npx serve
-```
-
----
-
-## 📁 Project Structure
-
-```
+```text
 .
-├── arsalan-portfolio.html   # the entire site (HTML + CSS + JS + vendored libs)
+├── index.html
+├── familia.html
 ├── assets/
-│   └── preview.png          # social/README screenshot (add your own)
-├── README.md
-├── LICENSE
+│   ├── preview.webp
+│   ├── thiago-profile.jpg
+│   ├── familia.css
+│   ├── familia.js
+│   ├── polish.css
+│   ├── refinements.js
+│   ├── youtube-phone.css
+│   ├── youtube-phone.js
+│   └── family-*.jpg
+├── api/
+│   ├── youtube-channel.js
+│   ├── youtube-subscribers.js
+│   └── fallback-channel.json
+├── local_server.py
+├── vercel.json
 ├── CHANGELOG.md
-└── .gitignore
+├── LICENSE
+└── README.md
 ```
 
-> The portrait photos are hosted externally (Cloudinary) and referenced by URL, which keeps the
-> repo light. Swap the `src` of the two `.portrait-img` tags to use your own.
+---
+
+## Ejecutar en local
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/PapiGECode/thiagoiutu-portfolio.git
+cd thiagoiutu-portfolio
+```
+
+### 2. Configurar la API de YouTube
+
+Crea un archivo `.env.local` en la raíz:
+
+```env
+THIAGO_YOUTUBE_API_KEY=tu_clave_de_youtube_data_api
+```
+
+> No subas claves de API al repositorio. Para producción, usa variables de entorno del proveedor de despliegue.
+
+### 3. Iniciar el servidor
+
+```bash
+python local_server.py
+```
+
+Después abre:
+
+```text
+http://127.0.0.1:8000
+```
+
+El servidor local también expone:
+
+```text
+/api/youtube-channel
+/api/youtube-subscribers
+```
 
 ---
 
-## 🎨 Customization
+## Despliegue en Vercel
 
-Everything you'd want to change lives either in the `<style>` block at the top or in the readable
-`<script>` at the very bottom. **Don't touch the four dense minified `<script>` blocks near the end
-— those are the vendored GSAP / Lenis libraries.**
+El proyecto ya incluye `vercel.json` y funciones serverless en `/api`.
 
-
-| I want to change…            | Where to look                                                                                                   |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Colours / theme**           | `:root { }` (dark palette) and `html.light { }` (light palette). Edit `--ink` (background) and `--bone` (text). |
-| **Fonts**                     | The Google Fonts`<link>` in `<head>`, plus `--font-display / --font-body / --font-mono`.                        |
-| **Name, bio, copy**           | Directly in the HTML sections — just type over the text.                                                       |
-| **Rotating role text**        | The`roles` array in the script.                                                                                 |
-| **Marquee words**             | The`.marquee-item` spans (duplicated once for a seamless loop — edit both copies).                             |
-| **Projects**                  | The three`<article class="panel">` blocks and the three `.mini` cards.                                          |
-| **Portrait photos**           | The two`.portrait-img` `src` URLs (one for dark, one for light).                                                |
-| **Footer watermark size**     | `.foot-word { font-size: clamp(4rem, 26vw, 22rem) }` — the middle `vw` is the live value.                      |
-| **Easter-egg accent colours** | The`accents` array in the script.                                                                               |
-
-### Replace the placeholder links
-
-Before going live, update these (search the file for `#` and `example.com`):
-
-- Social links — `mailto:` email, GitHub, LinkedIn, and the résumé link
-- Each project's **View project** and **GitHub** buttons
-- The `<title>`, `<meta name="description">`, and `og:` tags in `<head>`
-
-### Hook up the contact form
-
-The form currently shows a **visual success state only** — it doesn't send anything yet. Point it at
-a no-backend service like [Formspree](https://formspree.io) or [Web3Forms](https://web3forms.com)
-to start receiving messages.
+1. Importa el repositorio en Vercel.
+2. Añade `THIAGO_YOUTUBE_API_KEY` como variable de entorno.
+3. Despliega sin build command.
+4. Vercel servirá la web estática y resolverá las rutas de API automáticamente.
 
 ---
 
-## 🌐 Deployment
+## Datos de YouTube
 
-Because it's a single static file, it deploys anywhere in seconds.
+La interfaz del teléfono consulta `/api/youtube-channel` para mostrar información del canal, incluyendo:
 
-<details>
-<summary><strong>GitHub Pages</strong></summary>
+- avatar y banner;
+- número de suscriptores y vídeos;
+- vídeos recientes;
+- visualizaciones, duración y estado de directo cuando están disponibles;
+- playlists públicas.
 
-1. Push to `main`.
-2. **Settings → Pages → Build and deployment → Source: Deploy from a branch**.
-3. Choose `main` / `root` and save.
-4. (Optional) Rename `arsalan-portfolio.html` to **`index.html`** so the site loads at the root URL.
-
-</details>
-
-<details>
-<summary><strong>Netlify</strong></summary>
-
-Drag-and-drop the file onto [app.netlify.com/drop](https://app.netlify.com/drop), or connect the
-repo — no build command, publish directory `/`.
-
-</details>
-
-<details>
-<summary><strong>Vercel</strong></summary>
-
-`vercel` from the project root, or import the repo in the dashboard. Framework preset: **Other**,
-no build step.
-
-</details>
+El proyecto incluye `api/fallback-channel.json` como respaldo para evitar que la experiencia quede vacía ante fallos temporales de la API.
 
 ---
 
-## ♿ Accessibility &amp; Performance
+## Personalización
 
-- Respects `prefers-reduced-motion` — the loader skips instantly and all content stays visible.
-- Semantic landmarks, a skip-to-content link, visible `:focus-visible` rings, and ARIA labels.
-- Animations are limited to `transform` / `opacity` for smooth 60 fps.
-- No render-blocking third-party scripts; libraries are inlined and the page is one cache hit.
+Los puntos principales para editar el proyecto son:
 
----
-
-## 🧩 Featured Projects (in the portfolio)
-
-
-| Project       | What it is                                                                                                               | Stack                                        |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
-| **Aestimo**   | AI career assistant — resume scoring, ATS-optimised CV generation, interview coaching, PDF export, streaming responses. | Flutter · Gemini AI · Riverpod · Firebase |
-| **Simul**     | Social watch-party platform — YouTube sync, WebRTC voice/screen share, Connect-4 mini-game.                             | Flutter · LiveKit · WebRTC · Firebase     |
-| **CivicPing** | Citizen infrastructure-reporting platform mapping public issues across Pakistan.                                         | Flutter · Firebase · Maps API              |
-| **SAUSSync**  | Cross-platform academic schedule management for university use.                                                          | Flutter · Firebase · Windows               |
-| **UniTime**   | Constraint-satisfaction timetable generator with conflict resolution.                                                    | Flutter · CSP solve                         |
-|               |                                                                                                                          |                                              |
+| Elemento | Archivo / ubicación |
+| --- | --- |
+| Contenido principal y secciones | `index.html` |
+| Colores y temas | variables CSS de `:root` y `html.light` |
+| Foto principal | `assets/thiago-profile.jpg` |
+| Pulido visual | `assets/polish.css` |
+| Refinamientos e interacciones | `assets/refinements.js` |
+| Interfaz de YouTube | `assets/youtube-phone.css` y `assets/youtube-phone.js` |
+| Página de familia | `familia.html`, `assets/familia.css` y `assets/familia.js` |
+| Datos de respaldo | `api/fallback-channel.json` |
 
 ---
 
-## 🗺️ Roadmap
+## Accesibilidad y rendimiento
 
-- [ ]  Wire the contact form to a real endpoint
-- [ ]  Add live project links &amp; GitHub repos
-- [ ]  Add a downloadable résumé
-- [ ]  Lighthouse pass &amp; Open Graph image
-- [ ]  Optional case-study pages
-
----
-
-## 📬 Contact
-
-**Arsalan Kaleem** — Flutter &amp; AI Developer · Shikarpur, Pakistan
-
-- 🌐 Website — `https://arsalankaleem.github.io/portfolio/`
-- ✉️ Email — `arsalanabbasi.here@gmail.com`
-- 💼 LinkedIn — `www.linkedin.com/in/arsalankaleem`
-- 🐙 GitHub — `https://github.com/ArsalanKaleem`
+- Respeta `prefers-reduced-motion`.
+- Incluye estados de foco y controles accesibles.
+- La interfaz de YouTube admite navegación por teclado.
+- Se priorizan animaciones basadas en `transform` y `opacity`.
+- El diseño se adapta a pantallas pequeñas y dispositivos táctiles.
+- Los datos de YouTube utilizan caché en la función serverless para reducir llamadas repetidas.
 
 ---
 
-## 📄 License
+## Licencia
 
-Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for details.
-
-> The **design, code, and structure** are MIT-licensed. The **personal content** (name, bio,
-> photos, and project write-ups) remains © Arsalan Kaleem — please swap it for your own if you
-> reuse this as a template.
+Consulta [`LICENSE`](./LICENSE) para los términos aplicables al código y los recursos de este repositorio.
 
 ---
 
-## 🙏 Acknowledgements
+<div align="center">
 
-- [GSAP](https://gsap.com) — GreenSock Animation Platform (incl. ScrollTrigger &amp; SplitText)
-- [Lenis](https://lenis.darkroom.engineering) — smooth scroll by Darkroom Engineering
-- [Bricolage Grotesque](https://fonts.google.com/specimen/Bricolage+Grotesque),
-  [Inter](https://fonts.google.com/specimen/Inter),
-  [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)
+**ThiagoIUTU Portfolio**  
+Una web construida alrededor de su identidad, su contenido y su comunidad.
 
-<p align="center"><sub>Designed & built by Arsalan Kaleem — deliberately.</sub></p>
+</div>
