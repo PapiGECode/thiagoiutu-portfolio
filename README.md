@@ -70,7 +70,7 @@ La web no está planteada como una landing genérica: utiliza una dirección vis
 ├── index.html
 ├── familia.html
 ├── assets/
-│   ├── preview.webp
+│   ├── preview.jpg
 │   ├── thiago-profile.jpg
 │   ├── familia.css
 │   ├── familia.js
